@@ -27,11 +27,7 @@ public class GlobeException {
     @ExceptionHandler(NullPointerException.class)
     public String processException(Exception ex, HttpServletRequest request, HttpServletResponse response) {
 
-        /**
-         * 未知异常
-         */
-        logger.error(ex.toString());
-        return "这里出错了";
+        return "出错了";
 
     }
     private static Logger logger = LoggerFactory.getLogger(GlobeException.class);

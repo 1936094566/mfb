@@ -1,5 +1,6 @@
 package com.mc.mfb.admin.serivce.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mc.mfb.admin.dao.UserDao;
 import com.mc.mfb.admin.entity.User;
 import com.mc.mfb.admin.serivce.UserService;
@@ -7,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
@@ -16,7 +18,6 @@ import java.util.List;
  * @Date:2019/5/7
  * @Time:8:52
  **/
-
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -27,8 +28,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> getAllUser() {
-        User user = null ;
-        user.toString();
-        return userDao.findAll();
+        return userDao.selectList(null);
+    }
+
+    @Override
+    public User doLogin(String username,String password) {
+
+        User user = userDao.selectOne(new QueryWrapper<User>()
+                .eq("username", username)
+                .eq("password", password));
+
+        return user;
+
     }
 }
