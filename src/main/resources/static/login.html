@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <!-- 导入css -->
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/layui.css" >
 </head>
 <body>
-<div id="app">
-    <el-button  @click="visible = true">Button</el-button>
-    <el-dialog :visible.sync="visible" title="Hello world">
-        <p>Try Element</p>
-    </el-dialog>
+<div class="layui-container">
+    <div class="layui-row">
+        <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item"><a href="">最新活动</a></li>
+            <li class="layui-nav-item layui-this"><a href="">产品</a></li>
+            <li class="layui-nav-item"><a href="/exp">导出excel</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">解决方案</a>
+                <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                    <dd><a href="">移动模块</a></dd>
+                    <dd><a href="">后台模版</a></dd>
+                    <dd><a href="">电商平台</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">社区</a></li>
+        </ul>
+    </div>
 </div>
-</body>
-<!-- import Vue before Element -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
 
-<!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script src="js/layui.js"></script>
 <script>
-    new Vue({
-        el: '#app',
-        data: function() {
-            return { visible: false }
-        }
-    })
+    layui.use('element', function(){
+        var element = layui.element;
+    });
 </script>
+</body>
 </html>
