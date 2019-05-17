@@ -88,14 +88,14 @@ public class ExpExcel {
             if(false){
                 beanList .add(new ExcelExportEntity("出生日期", "birthday"));
             }
-            List<Map<String,String>> list = new ArrayList<>();
+            List<Map<String,Object>> list = new ArrayList<>();
             list.add(beanToMap(new StudentEntity("1","张三",1,new Date(),new Date())));
-            list.add(new StudentEntity("2","张三",1,new Date(),new Date()));
-            list.add(new StudentEntity("3","张三",1,new Date(),new Date()));
-            list.add(new StudentEntity("4","张三",1,new Date(),new Date()));
-            list.add(new StudentEntity("5","张三",1,new Date(),new Date()));
+            list.add(beanToMap(new StudentEntity("2","张三",1,new Date(),new Date())));
+            list.add(beanToMap(new StudentEntity("3","张三",1,new Date(),new Date())));
+            list.add(beanToMap(new StudentEntity("4","张三",1,new Date(),new Date())));
+            list.add(beanToMap(new StudentEntity("5","张三",1,new Date(),new Date())));
 
-//把我们构造好的bean对象放到params就可以了
+            //把我们构造好的bean对象放到params就可以了
             Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("测试", "测试"), beanList,
                list     );
             response.setCharacterEncoding("UTF-8");
