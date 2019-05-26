@@ -15,4 +15,7 @@ public interface UserService {
      List<User> getAllUser();
 
      User doLogin(String username,String password);
+
+     List<User> getAllUser(String sql);
+
 }

@@ -1,6 +1,8 @@
 package com.mc.mfb.admin.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @Created with IDEA
@@ -10,6 +12,8 @@ import lombok.Data;
  * 结果返回类
  **/
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ResultEntity {
     private int code;
     private boolean success;

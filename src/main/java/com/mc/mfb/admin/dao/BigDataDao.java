@@ -10,4 +10,5 @@ import com.mc.mfb.admin.entity.BigData;
  * @Time:11:39
  **/
 public interface BigDataDao  extends BaseMapper<BigData> {
+
 }

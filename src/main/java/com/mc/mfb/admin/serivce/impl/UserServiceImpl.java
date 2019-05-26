@@ -21,7 +21,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
+    private  Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
     private UserDao userDao;
@@ -40,5 +40,12 @@ public class UserServiceImpl implements UserService {
 
         return user;
 
+    }
+
+    @Override
+    public List<User> getAllUser(String sql) {
+        logger.info(sql);
+
+        return null;
     }
 }

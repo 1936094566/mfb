@@ -5,10 +5,12 @@ import cn.afterturn.easypoi.excel.entity.ExportParams;
 import cn.afterturn.easypoi.excel.entity.params.ExcelExportEntity;
 import com.google.common.collect.Maps;
 import com.mc.mfb.admin.dao.BigDataDao;
+import com.mc.mfb.admin.dao.KeyDao;
 import com.mc.mfb.admin.entity.ExcelModel.CourseEntity;
+import com.mc.mfb.admin.entity.ExcelModel.Key;
 import com.mc.mfb.admin.entity.ExcelModel.StudentEntity;
 import com.mc.mfb.admin.entity.ExcelModel.TeacherEntity;
-import org.apache.commons.beanutils.BeanUtils;
+import com.mc.mfb.admin.serivce.KeyService;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cglib.beans.BeanMap;
@@ -35,6 +37,24 @@ import java.util.Map;
 @RequestMapping("/exp")
 @Controller
 public class ExpExcel {
+
+    @Autowired
+    private KeyService keyService;
+
+    @Autowired
+    private KeyDao keyDao;
+
+    @RequestMapping("/test")
+    public void test(){
+        //List<Key> keys = new ArrayList<>();
+       // for(int i= 0 ; i <10 ;i++){
+         //   Key key = new Key(i,"cs"+i+"h");
+           // keys.add(key);
+       // }
+       // keyService.addKey(keys);
+     }
+
+
 
     @Autowired
     private BigDataDao bigDataDao;
