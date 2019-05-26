@@ -1,0 +1,151 @@
+2019-5-8 17:03:32 [main] INFO [MfbApplication]:50 Starting MfbApplication on DESKTOP-7OA23GB with PID 20604 (E:\ideaworkspace\mfb\target\classes started by machao0605 in E:\ideaworkspace\mfb)
+2019-5-8 17:03:32 [main] INFO [MfbApplication]:675 No active profile set, falling back to default profiles: default
+2019-5-8 17:03:33 [main] INFO [RepositoryConfigurationDelegate]:244 Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-5-8 17:03:33 [main] INFO [RepositoryConfigurationDelegate]:126 Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-5-8 17:03:33 [main] INFO [RepositoryConfigurationDelegate]:182 Finished Spring Data repository scanning in 70ms. Found 1 repository interfaces.
+2019-5-8 17:03:33 [main] INFO [RepositoryConfigurationDelegate]:244 Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-5-8 17:03:33 [main] INFO [RepositoryConfigurationDelegate]:126 Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-5-8 17:03:33 [main] INFO [RepositoryConfigurationExtensionSupport]:363 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mc.mfb.admin.dao.UserDao.
+2019-5-8 17:03:33 [main] INFO [RepositoryConfigurationDelegate]:182 Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-5-8 17:03:33 [main] INFO [PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:330 Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d7b12d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-5-8 17:03:34 [main] INFO [TomcatWebServer]:90 Tomcat initialized with port(s): 8080 (http)
+2019-5-8 17:03:34 [main] INFO [Http11NioProtocol]:173 Initializing ProtocolHandler ["http-nio-8080"]
+2019-5-8 17:03:34 [main] INFO [StandardService]:173 Starting service [Tomcat]
+2019-5-8 17:03:34 [main] INFO [StandardEngine]:173 Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-5-8 17:03:34 [main] INFO [[/]]:173 Initializing Spring embedded WebApplicationContext
+2019-5-8 17:03:34 [main] INFO [ContextLoader]:296 Root WebApplicationContext: initialization completed in 2248 ms
+2019-5-8 17:03:34 [main] INFO [DruidDataSourceAutoConfigure]:56 Init DruidDataSource
+2019-5-8 17:03:35 [main] INFO [DruidDataSource]:928 {dataSource-1} inited
+2019-5-8 17:03:35 [main] INFO [LogHelper]:31 HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-5-8 17:03:35 [main] INFO [Version]:46 HHH000412: Hibernate Core {5.3.9.Final}
+2019-5-8 17:03:35 [main] INFO [Environment]:213 HHH000206: hibernate.properties not found
+2019-5-8 17:03:35 [main] INFO [Version]:49 HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-5-8 17:03:35 [main] INFO [Dialect]:157 HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-5-8 17:03:37 [main] INFO [LocalContainerEntityManagerFactoryBean]:415 Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-5-8 17:03:39 [main] INFO [ThreadPoolTaskExecutor]:171 Initializing ExecutorService 'applicationTaskExecutor'
+2019-5-8 17:03:39 [main] WARN [JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration]:237 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-5-8 17:03:39 [main] INFO [Http11NioProtocol]:173 Starting ProtocolHandler ["http-nio-8080"]
+2019-5-8 17:03:39 [main] INFO [TomcatWebServer]:204 Tomcat started on port(s): 8080 (http) with context path ''
+2019-5-8 17:03:39 [main] INFO [MfbApplication]:59 Started MfbApplication in 8.255 seconds (JVM running for 12.997)
+2019-5-8 17:04:03 [http-nio-8080-exec-1] INFO [[/]]:173 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-5-8 17:04:03 [http-nio-8080-exec-1] INFO [DispatcherServlet]:524 Initializing Servlet 'dispatcherServlet'
+2019-5-8 17:04:03 [http-nio-8080-exec-1] INFO [DispatcherServlet]:546 Completed initialization in 12 ms
+2019-5-8 17:04:03 [http-nio-8080-exec-1] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:04:03 [http-nio-8080-exec-1] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:04:03 [http-nio-8080-exec-1] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:04:04 [http-nio-8080-exec-3] INFO [BaseInterceptor]:35 url--http://localhost:8080/js/jquery-2.1.0.min.js
+2019-5-8 17:04:04 [http-nio-8080-exec-3] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:04:04 [http-nio-8080-exec-3] INFO [BaseInterceptor]:37 uri--/js/jquery-2.1.0.min.js
+2019-5-8 17:04:57 [http-nio-8080-exec-4] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:04:57 [http-nio-8080-exec-4] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:04:57 [http-nio-8080-exec-4] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:04:57 [http-nio-8080-exec-6] INFO [BaseInterceptor]:35 url--http://localhost:8080/js/jquery-2.1.0.min.js
+2019-5-8 17:04:57 [http-nio-8080-exec-6] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:04:57 [http-nio-8080-exec-6] INFO [BaseInterceptor]:37 uri--/js/jquery-2.1.0.min.js
+2019-5-8 17:05:56 [http-nio-8080-exec-10] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:05:56 [http-nio-8080-exec-10] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:05:56 [http-nio-8080-exec-10] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:05:56 [http-nio-8080-exec-8] INFO [BaseInterceptor]:35 url--http://localhost:8080/js/jquery-2.1.0.min.js
+2019-5-8 17:05:56 [http-nio-8080-exec-8] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:05:56 [http-nio-8080-exec-8] INFO [BaseInterceptor]:37 uri--/js/jquery-2.1.0.min.js
+2019-5-8 17:06:02 [http-nio-8080-exec-9] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:06:02 [http-nio-8080-exec-9] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:06:02 [http-nio-8080-exec-9] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:06:02 [http-nio-8080-exec-2] INFO [BaseInterceptor]:35 url--http://localhost:8080/js/jquery-2.1.0.min.js
+2019-5-8 17:06:02 [http-nio-8080-exec-2] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:06:02 [http-nio-8080-exec-2] INFO [BaseInterceptor]:37 uri--/js/jquery-2.1.0.min.js
+2019-5-8 17:07:12 [http-nio-8080-exec-5] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:07:12 [http-nio-8080-exec-5] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:07:12 [http-nio-8080-exec-5] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:07:12 [http-nio-8080-exec-4] INFO [BaseInterceptor]:35 url--http://localhost:8080/js/jquery-2.1.0.min.js
+2019-5-8 17:07:12 [http-nio-8080-exec-4] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:07:12 [http-nio-8080-exec-4] INFO [BaseInterceptor]:37 uri--/js/jquery-2.1.0.min.js
+2019-5-8 17:07:17 [http-nio-8080-exec-6] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:07:17 [http-nio-8080-exec-6] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:07:17 [http-nio-8080-exec-6] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:07:17 [http-nio-8080-exec-7] INFO [BaseInterceptor]:35 url--http://localhost:8080/js/jquery-2.1.0.min.js
+2019-5-8 17:07:17 [http-nio-8080-exec-7] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:07:17 [http-nio-8080-exec-7] INFO [BaseInterceptor]:37 uri--/js/jquery-2.1.0.min.js
+2019-5-8 17:09:47 [http-nio-8080-exec-9] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:09:47 [http-nio-8080-exec-9] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:09:47 [http-nio-8080-exec-9] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:09:47 [http-nio-8080-exec-2] INFO [BaseInterceptor]:35 url--http://localhost:8080/js/jquery-2.1.0.min.js
+2019-5-8 17:09:47 [http-nio-8080-exec-2] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:09:47 [http-nio-8080-exec-2] INFO [BaseInterceptor]:37 uri--/js/jquery-2.1.0.min.js
+2019-5-8 17:16:19 [http-nio-8080-exec-5] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 17:16:19 [http-nio-8080-exec-5] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:16:19 [http-nio-8080-exec-5] INFO [BaseInterceptor]:37 uri--/login.html
+2019-5-8 17:51:24 [main] INFO [MfbApplication]:50 Starting MfbApplication on DESKTOP-7OA23GB with PID 19596 (E:\ideaworkspace\mfb\target\classes started by machao0605 in E:\ideaworkspace\mfb)
+2019-5-8 17:51:24 [main] INFO [MfbApplication]:675 No active profile set, falling back to default profiles: default
+2019-5-8 17:51:25 [main] INFO [RepositoryConfigurationDelegate]:244 Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-5-8 17:51:25 [main] INFO [RepositoryConfigurationDelegate]:126 Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-5-8 17:51:25 [main] INFO [RepositoryConfigurationDelegate]:182 Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-5-8 17:51:26 [main] INFO [PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:330 Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76c7e3a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-5-8 17:51:26 [main] INFO [TomcatWebServer]:90 Tomcat initialized with port(s): 8080 (http)
+2019-5-8 17:51:26 [main] INFO [Http11NioProtocol]:173 Initializing ProtocolHandler ["http-nio-8080"]
+2019-5-8 17:51:26 [main] INFO [StandardService]:173 Starting service [Tomcat]
+2019-5-8 17:51:26 [main] INFO [StandardEngine]:173 Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-5-8 17:51:26 [main] INFO [[/]]:173 Initializing Spring embedded WebApplicationContext
+2019-5-8 17:51:26 [main] INFO [ContextLoader]:296 Root WebApplicationContext: initialization completed in 2254 ms
+2019-5-8 17:51:27 [main] INFO [DruidDataSourceAutoConfigure]:56 Init DruidDataSource
+2019-5-8 17:51:27 [main] INFO [DruidDataSource]:928 {dataSource-1} inited
+2019-5-8 17:51:27 [main] INFO [ThreadPoolTaskExecutor]:171 Initializing ExecutorService 'applicationTaskExecutor'
+2019-5-8 17:51:28 [main] INFO [Http11NioProtocol]:173 Starting ProtocolHandler ["http-nio-8080"]
+2019-5-8 17:51:28 [main] INFO [TomcatWebServer]:204 Tomcat started on port(s): 8080 (http) with context path ''
+2019-5-8 17:51:28 [main] INFO [MfbApplication]:59 Started MfbApplication in 4.877 seconds (JVM running for 6.23)
+2019-5-8 17:51:59 [http-nio-8080-exec-1] INFO [[/]]:173 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-5-8 17:51:59 [http-nio-8080-exec-1] INFO [DispatcherServlet]:524 Initializing Servlet 'dispatcherServlet'
+2019-5-8 17:51:59 [http-nio-8080-exec-1] INFO [DispatcherServlet]:546 Completed initialization in 11 ms
+2019-5-8 17:51:59 [http-nio-8080-exec-1] INFO [BaseInterceptor]:35 url--http://localhost:8080/admin
+2019-5-8 17:51:59 [http-nio-8080-exec-1] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:51:59 [http-nio-8080-exec-1] INFO [BaseInterceptor]:37 uri--/admin
+2019-5-8 17:53:00 [main] INFO [MfbApplication]:50 Starting MfbApplication on DESKTOP-7OA23GB with PID 17264 (E:\ideaworkspace\mfb\target\classes started by machao0605 in E:\ideaworkspace\mfb)
+2019-5-8 17:53:00 [main] INFO [MfbApplication]:675 No active profile set, falling back to default profiles: default
+2019-5-8 17:53:02 [main] INFO [RepositoryConfigurationDelegate]:244 Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-5-8 17:53:02 [main] INFO [RepositoryConfigurationDelegate]:126 Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-5-8 17:53:02 [main] INFO [RepositoryConfigurationDelegate]:182 Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2019-5-8 17:53:02 [main] INFO [PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:330 Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e555e45d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-5-8 17:53:03 [main] INFO [TomcatWebServer]:90 Tomcat initialized with port(s): 8080 (http)
+2019-5-8 17:53:03 [main] INFO [Http11NioProtocol]:173 Initializing ProtocolHandler ["http-nio-8080"]
+2019-5-8 17:53:03 [main] INFO [StandardService]:173 Starting service [Tomcat]
+2019-5-8 17:53:03 [main] INFO [StandardEngine]:173 Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-5-8 17:53:03 [main] INFO [[/]]:173 Initializing Spring embedded WebApplicationContext
+2019-5-8 17:53:03 [main] INFO [ContextLoader]:296 Root WebApplicationContext: initialization completed in 2938 ms
+2019-5-8 17:53:03 [main] INFO [DruidDataSourceAutoConfigure]:56 Init DruidDataSource
+2019-5-8 17:53:04 [main] INFO [DruidDataSource]:928 {dataSource-1} inited
+2019-5-8 17:53:05 [main] INFO [ThreadPoolTaskExecutor]:171 Initializing ExecutorService 'applicationTaskExecutor'
+2019-5-8 17:53:05 [main] INFO [Http11NioProtocol]:173 Starting ProtocolHandler ["http-nio-8080"]
+2019-5-8 17:53:05 [main] INFO [TomcatWebServer]:204 Tomcat started on port(s): 8080 (http) with context path ''
+2019-5-8 17:53:05 [main] INFO [MfbApplication]:59 Started MfbApplication in 5.933 seconds (JVM running for 8.47)
+2019-5-8 17:53:10 [http-nio-8080-exec-2] INFO [[/]]:173 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-5-8 17:53:10 [http-nio-8080-exec-2] INFO [DispatcherServlet]:524 Initializing Servlet 'dispatcherServlet'
+2019-5-8 17:53:10 [http-nio-8080-exec-2] INFO [DispatcherServlet]:546 Completed initialization in 11 ms
+2019-5-8 17:53:10 [http-nio-8080-exec-2] INFO [BaseInterceptor]:35 url--http://localhost:8080/admin
+2019-5-8 17:53:10 [http-nio-8080-exec-2] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 17:53:10 [http-nio-8080-exec-2] INFO [BaseInterceptor]:37 uri--/admin
+2019-5-8 18:02:38 [main] INFO [MfbApplication]:50 Starting MfbApplication on DESKTOP-7OA23GB with PID 19244 (E:\ideaworkspace\mfb\target\classes started by machao0605 in E:\ideaworkspace\mfb)
+2019-5-8 18:02:38 [main] INFO [MfbApplication]:675 No active profile set, falling back to default profiles: default
+2019-5-8 18:02:38 [main] INFO [RepositoryConfigurationDelegate]:244 Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-5-8 18:02:38 [main] INFO [RepositoryConfigurationDelegate]:126 Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-5-8 18:02:38 [main] INFO [RepositoryConfigurationDelegate]:182 Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-5-8 18:02:39 [main] INFO [PostProcessorRegistrationDelegate$BeanPostProcessorChecker]:330 Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a065ed84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-5-8 18:02:39 [main] INFO [TomcatWebServer]:90 Tomcat initialized with port(s): 8080 (http)
+2019-5-8 18:02:39 [main] INFO [Http11NioProtocol]:173 Initializing ProtocolHandler ["http-nio-8080"]
+2019-5-8 18:02:39 [main] INFO [StandardService]:173 Starting service [Tomcat]
+2019-5-8 18:02:39 [main] INFO [StandardEngine]:173 Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-5-8 18:02:39 [main] INFO [[/]]:173 Initializing Spring embedded WebApplicationContext
+2019-5-8 18:02:39 [main] INFO [ContextLoader]:296 Root WebApplicationContext: initialization completed in 1588 ms
+2019-5-8 18:02:39 [main] INFO [DruidDataSourceAutoConfigure]:56 Init DruidDataSource
+2019-5-8 18:02:40 [main] INFO [DruidDataSource]:928 {dataSource-1} inited
+2019-5-8 18:02:40 [main] INFO [ThreadPoolTaskExecutor]:171 Initializing ExecutorService 'applicationTaskExecutor'
+2019-5-8 18:02:41 [main] INFO [Http11NioProtocol]:173 Starting ProtocolHandler ["http-nio-8080"]
+2019-5-8 18:02:41 [main] INFO [TomcatWebServer]:204 Tomcat started on port(s): 8080 (http) with context path ''
+2019-5-8 18:02:41 [main] INFO [MfbApplication]:59 Started MfbApplication in 4.171 seconds (JVM running for 5.799)
+2019-5-8 18:02:51 [http-nio-8080-exec-1] INFO [[/]]:173 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-5-8 18:02:51 [http-nio-8080-exec-1] INFO [DispatcherServlet]:524 Initializing Servlet 'dispatcherServlet'
+2019-5-8 18:02:51 [http-nio-8080-exec-1] INFO [DispatcherServlet]:546 Completed initialization in 13 ms
+2019-5-8 18:02:51 [http-nio-8080-exec-1] INFO [BaseInterceptor]:35 url--http://localhost:8080/login.html
+2019-5-8 18:02:51 [http-nio-8080-exec-1] INFO [BaseInterceptor]:36 method--GET
+2019-5-8 18:02:51 [http-nio-8080-exec-1] INFO [BaseInterceptor]:37 uri--/login.html
