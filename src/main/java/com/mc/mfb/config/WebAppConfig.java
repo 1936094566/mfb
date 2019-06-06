@@ -1,4 +1,4 @@
-package com.mc.mfb.configura;
+package com.mc.mfb.config;
 
 import com.mc.mfb.admin.interceptor.BaseInterceptor;
 import org.springframework.context.annotation.Configuration;

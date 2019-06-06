@@ -1,3 +1,4 @@
+
 spring:
 #--------------------------charset--------------------------
   http:
@@ -12,9 +13,9 @@ spring:
   datasource:
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/mfb
+      url: jdbc:mysql://localhost:3306/ntc-lite
       username: root
-      password: 1234
+      password: root
       druid:
           # 初始连接数
           initial-size: 10
@@ -63,3 +64,5 @@ mybatis-plus:
      #        max-idle: 100
      #        min-idle: 10
      #        max-wait: 2000
+server:
+  port: 8088
