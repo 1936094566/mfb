@@ -1,5 +1,14 @@
 
 spring:
+  mail:
+    host: smtp.qq.com
+    password: ufpzqsyhjansbeia
+    username: machao0605@qq.com
+    default-encoding: UTF-8
+    properties:
+      mail.smtp.socketFactory.fallback : true
+      mail.smtp.starttls.enable: true
+
 #--------------------------charset--------------------------
   http:
     encoding:
@@ -15,7 +24,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/ntc-lite
       username: root
-      password: root
+      password: 1234
       druid:
           # 初始连接数
           initial-size: 10
@@ -52,6 +61,7 @@ spring:
                       multi-statement-allow: true
   logging:
     level: debug
+###################################mybatis-plus################################
 mybatis-plus:
   mapper-locations: classpath:mapper/*/*.xml
   type-aliases-package: com.mc.mfb.admin.entity

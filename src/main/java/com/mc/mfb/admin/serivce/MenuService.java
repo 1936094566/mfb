@@ -16,6 +16,6 @@ public interface MenuService {
      *
      * @return
      */
-    List<Menu> getMenus(Integer belong);
+    List<Menu> getMenus(Menu menu);
 
 }

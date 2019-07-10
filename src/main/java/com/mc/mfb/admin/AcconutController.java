@@ -43,8 +43,11 @@ public class AcconutController {
     public Object testDoit(@ModelAttribute User zs, @ModelAttribute Key ls){
 
 
-        int i = 1;
         return "";
     }
 
+    @RequestMapping("/hello")
+    public Object hello(String hello){
+        return "HELLO "+hello;
+    }
 }
