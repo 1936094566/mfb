@@ -45,7 +45,8 @@ public class JwtUtil {
             verifier.verify(token);
             return true;
         } catch (UnsupportedEncodingException e) {
-            throw new MfbException("JWTToken认证解密出现UnsupportedEncodingException异常:" + e.getMessage());
+            return false;
+            //throw new MfbException("JWTToken认证解密出现UnsupportedEncodingException异常:" + e.getMessage());
         }
     }
 

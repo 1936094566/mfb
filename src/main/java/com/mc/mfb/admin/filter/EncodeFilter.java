@@ -1,5 +1,7 @@
 package com.mc.mfb.admin.filter;
 
+import org.springframework.context.annotation.Configuration;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +14,7 @@ import java.io.IOException;
  * @Time:10:38
  * 编码过滤器
  **/
-//@Component
+@Configuration
 public class EncodeFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

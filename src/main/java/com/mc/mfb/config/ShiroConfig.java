@@ -1,5 +1,6 @@
 package com.mc.mfb.config;
 
+import com.mc.mfb.admin.filter.EncodeFilter;
 import com.mc.mfb.admin.filter.JwtFilter;
 import com.mc.mfb.admin.shiro.MyRealm;
 import com.mc.mfb.admin.shiro.cache.CustomCacheManager;
@@ -63,6 +64,7 @@ public class ShiroConfig {
 
         // 添加自己的过滤器并且取名为jwt
         Map<String, Filter> filterMap = new LinkedHashMap<>(1);
+        filterMap.put("encode",new EncodeFilter());
         filterMap.put("jwt", new JwtFilter(getRedisUtil()));
         shiroFilterFactoryBean.setFilters(filterMap);
         //<!-- 过滤链定义，从上向下顺序执行，一般将/**放在最为下边
@@ -73,6 +75,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/swagger**/**", "anon");
         filterChainDefinitionMap.put("/webjars/**", "anon");
         filterChainDefinitionMap.put("/v2/**", "anon");
+        filterChainDefinitionMap.put("/**","encode");
         filterChainDefinitionMap.put("/**", "jwt");
 
         //未授权界面;
