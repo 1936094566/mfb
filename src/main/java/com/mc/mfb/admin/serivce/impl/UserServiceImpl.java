@@ -1,6 +1,7 @@
 package com.mc.mfb.admin.serivce.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mc.mfb.admin.dao.UserDao;
 import com.mc.mfb.admin.entity.User;
 import com.mc.mfb.admin.serivce.UserService;
@@ -19,7 +20,7 @@ import java.util.List;
  * @Time:8:52
  **/
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl  extends ServiceImpl<UserDao, User> implements UserService {
 
     private  Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
@@ -37,7 +38,6 @@ public class UserServiceImpl implements UserService {
         User user = userDao.selectOne(new QueryWrapper<User>()
                 .eq("username", username)
                 .eq("password", password));
-
         return user;
 
     }
@@ -47,5 +47,10 @@ public class UserServiceImpl implements UserService {
         logger.info(sql);
 
         return null;
+    }
+
+    @Override
+    public User findByUserName(String username) {
+        return userDao.selectOne(new QueryWrapper<User>().eq("username",username));
     }
 }

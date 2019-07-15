@@ -18,8 +18,8 @@ public class Role {
     @Id
     @TableId(type=IdType.AUTO)
     private int id;
-    private String rolename;
-    private String rolecode;
+    private String roleName;
+    private String roleCode;
     private String descprition;
 
 }

@@ -16,6 +16,9 @@
 package com.mc.mfb.admin.util;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -311,6 +314,7 @@ public class ToolUtil {
 
 
 
+
     /**
      * 强转->string,并去掉多余空格
      *
@@ -521,4 +525,30 @@ public class ToolUtil {
             throw new RuntimeException(e);
         }
     }
+
+
+
+    /**
+     * 获取客户端ip
+     * @param req
+     * @return
+     */
+    public static String getRealIp(HttpServletRequest req) {
+        String ip = req.getHeader("x-forwarded-for");
+
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = req.getHeader("Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = req.getHeader("WL-Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = req.getRemoteAddr();
+        }
+        if (ip == null || ip.length() == 0 || "0:0:0:0:0:0:0:1".equals(ip)) {
+            ip = "127.0.0.1";
+        }
+        return ip;
+    }
+
 }

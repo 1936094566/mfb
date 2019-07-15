@@ -1,5 +1,6 @@
 package com.mc.mfb.admin.entity;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,8 +16,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResultEntity {
-    private int code;
+    private Integer code;
     private boolean success;
     private String message;
     private Object data;
+
+    public ResultEntity(Integer code ,String message, Boolean success){
+        this.code = code;
+        this.success = success;
+        this.message = message;
+    }
 }

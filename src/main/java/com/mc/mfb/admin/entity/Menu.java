@@ -91,4 +91,9 @@ public class Menu implements Serializable {
     */
     private Integer ismenu;
 
+
+    /**
+     * 权限Code
+     */
+    private String perCode;
 }
