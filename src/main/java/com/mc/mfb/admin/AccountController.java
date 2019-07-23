@@ -49,4 +49,9 @@ public class AccountController {
     public Object test(){
         return "helloworld";
     }
+    @PostMapping("/test2")
+    public Object doFirst(){
+        return "maChao is  best ";
+    }
+
 }
