@@ -42,7 +42,7 @@ public class JwtUtil {
             JWTVerifier verifier = JWT.require(algorithm)
                     .build();
             //验证不成功会抛出异常
-            verifier.verify(token);
+           // verifier.verify(token);
             return true;
         } catch (UnsupportedEncodingException e) {
             return false;
