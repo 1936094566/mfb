@@ -17,6 +17,7 @@ public class McBest {
             System.out.println("很帅的我");
             System.out.println("最帅最好看的我!");
             System.out.println("我必定帅气,我必定优秀");
+            System.out.println("开始学习数据结构算法");
             System.out.println(x);
         }
 
