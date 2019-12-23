@@ -19,6 +19,7 @@ public class McBest {
             System.out.println("我必定帅气,我必定优秀");
             System.out.println("开始学习数据结构算法");
             System.out.println("目前学习第一篇");
+            System.out.println("已经学习kafka");
             System.out.println(x);
         }
 
